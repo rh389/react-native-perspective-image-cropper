@@ -5,7 +5,7 @@ package = JSON.parse(File.read(File.join(__dir__, "../package.json")))
 Pod::Spec.new do |s|
   s.name         = "RNCustomCrop"
   s.version      = package["version"]
-  s.summary      = package["description"]
+  s.summary      = package["name"]
   s.description  = package["description"]
   s.homepage     = package["homepage"]
   s.license      = package["license"]
